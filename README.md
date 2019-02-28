@@ -15,37 +15,33 @@ Note: If you can't use SASS. Please `npm rebuild node-sass` or `npm install node
 ## Some good extensions of VSC support development conveniently
 Bracket pair colorizer, Indent rainbow, Dracula Official, Gitlens, Live server, Material Icon Theme, Vscode icons, Fira Code, Rest Client.
 
-# Detect errors and format your code in react app automatically
+## Detect errors and format your code in react app automatically
 -Step 1 Add Eslint and Prettier extensions (only VSC)
+
 -Step 2: Install Eslint and Prettier plugins. (`npm install --save-dev prettier eslint-plugin-prettier`) 
+
 -Step 3: Create .eslintrc file with the following contents (at root folder):
-<!-- {
+`{
   "extends": "react-app",
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error"
   }
-}  -->
+}`
+
 -Step 4: Create .prettierrc file with the following contents (at root folder):
-<!-- 
-{
+ `{
   "singleQuote": true,
   "trailingComma": "es5"
-} 
--->
+} `
+
 -Final step: add the following to your Visual Studio Code Workspace Settings:
-<!-- "editor.formatOnSave": true -->
+ `"editor.formatOnSave": true`
 or you can create your own settings.json file by creating .vscode folder ( at root folder ) and create settings.json in the folder with the following contents:
-<!-- 
-{
-  // format your structure in every file
+`{
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-
-  // auto format when saving
   "editor.formatOnSave": true,
-
-  // hide file or folder you want when coding
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -54,9 +50,7 @@ or you can create your own settings.json file by creating .vscode folder ( at ro
     "**/.DS_Store": true,
     "**/node_modules": true
   }
-} 
--->
-
+}`
 
 ## Available Scripts
 
